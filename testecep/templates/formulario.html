@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Frete</title>
+</head>
+<body>
+    <h1>Calcular Frete</h1>
+    <form method="post" action="/calcular_frete">
+        <label for="raio_km">Raio Padrão (km):</label><br>
+        <input type="number" id="raio_km" name="raio_km" value="5" required><br><br>
+
+        <label for="valor_fixo">Valor Fixo (R$):</label><br>
+        <input type="number" id="valor_fixo" name="valor_fixo" value="5" required><br><br>
+
+        <label for="valor_adicional">Valor Adicional por km (R$):</label><br>
+        <input type="number" id="valor_adicional" name="valor_adicional" value="1" required><br><br>
+
+        <label for="cep_referencia">CEP de Referência:</label><br>
+        <input type="text" id="cep_referencia" name="cep_referencia" required><br><br>
+
+        <label for="cep_destino">CEP de Destino:</label><br>
+        <input type="text" id="cep_destino" name="cep_destino" required><br><br>
+
+        <input type="submit" value="Calcular Frete">
+    </form>
+</body>
+</html>
